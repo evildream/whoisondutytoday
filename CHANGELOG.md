@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.29.4
+
+<!-- Prepare for next release: remove this line and write your release notes -->
+
+
 ## 0.29.3
 ### Improvements
 - Added "Channels" view in the web interface to display data from channels table.

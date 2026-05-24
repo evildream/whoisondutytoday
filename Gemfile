@@ -2,30 +2,29 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.3.6'
-gem 'actionpack', '>= 7.0.8'
-gem 'actionview', '>= 7.0.8'
-gem 'activerecord', '>= 7.0.8'
-gem 'activestorage', '>= 7.0.8'
-gem 'activesupport', '>= 7.0.8'
+gem 'actionpack', '>= 8.1.2.1'
+gem 'actionview', '>= 7.2.3.1'
+gem 'activerecord', '>= 7.2.3.1'
+gem 'activestorage', '>= 8.1.2.1'
+gem 'activesupport', '>= 7.2.3.1'
 gem 'async-websocket', '~> 0.30.0'
 gem 'bigdecimal'
 gem 'bootstrap', '~> 5.3.2'
 gem 'font-awesome-rails', '>= 4.7.0.8'
 gem 'jquery-rails', '>= 4.6.1'
-gem 'json'
+gem 'json', '>= 2.17.1.2'
 gem 'mail', '>= 2.9.0'
 gem 'mutex_m'
 gem 'nokogiri', '>= 1.13.10'
-gem 'rubocop'
 gem 'slack-ruby-bot', '~> 0.16.1'
-gem 'slack-ruby-client', '2.4.0'
+gem 'slack-ruby-client', '2.5.0'
 gem 'stringio', '~> 3.1.1'
 gem 'whenever'
 gem 'nice_http'
 gem 'kramdown', '~> 2.4'
 gem 'kramdown-parser-gfm', '~> 1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.0.8'
+gem 'rails', '~> 8.1.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '< 2.0.0'
 # Use Puma as the app server
@@ -60,14 +59,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rubocop', require: false
+  gem 'rubocop', '>= 1.81.0', require: false
   gem 'standard', require: false
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen', '~> 3.5'
-  gem 'web-console', '>= 4.2.1'
+  gem 'web-console', '>= 4.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 4.1'
 end

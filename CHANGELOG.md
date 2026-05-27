@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.30.1
+
+<!-- Prepare for next release: remove this line and write your release notes -->
+
+
 ## 0.30.0
 ### Security
 - Disable slash commands, so no user would be able to run them

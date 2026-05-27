@@ -10,11 +10,12 @@
 - Updated `validates_uniqueness_of` to modern `validates` syntax in `Label` model
 - Fixed Bootstrap 5 badge classes in Channels view (`badge-success`/`badge-secondary` → `badge bg-success`/`badge bg-secondary`)
 - Fixed Bootstrap 5 table header classes (`thead-dark` → `table-dark`) across all views
-- Fixed Claude CLI silently failing due to tmpdir being owned by another user — set `CLAUDE_CODE_TMPDIR` to `/myapp/claude-tmp` in settings template and created the directory in Dockerfile
+- Fixed Claude CLI silently failing due to tmpdir being owned by another user — `CLAUDE_CODE_TMPDIR` is now optional via env var, injected into `settings.json` by `init_claude.sh` and `setup_claude_settings.sh`, with directory created in Dockerfile
 - Regenerated `db/schema.rb` after applying pending migrations (`jira_issue_defaults`, `channel_prompts`)
 - Made all shell scripts in `scripts/` executable and removed redundant `chmod +x` from Dockerfile
 - Removed redundant `mkdir /myapp` from Dockerfile (created implicitly by `WORKDIR`)
 - Added `*.log` and `/spring-*` to `.gitignore`
+- Documented `CLAUDE_CODE_TMPDIR` in `production.env.example`
 
 ## 0.29.4
 ### Improvements

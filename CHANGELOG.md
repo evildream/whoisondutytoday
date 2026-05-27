@@ -8,6 +8,8 @@
 - Updated `sqlite3` constraint from `< 2.0.0` to `>= 2.1` required by Rails 8.1
 - Fixed `enum` syntax in `Answer` model to use Rails 7.1+ positional argument style
 - Updated `validates_uniqueness_of` to modern `validates` syntax in `Label` model
+- Fixed Bootstrap 5 badge classes in Channels view (`badge-success`/`badge-secondary` → `badge bg-success`/`badge bg-secondary`)
+- Fixed Bootstrap 5 table header classes (`thead-dark` → `table-dark`) across all views
 
 ## 0.29.4
 ### Improvements

@@ -7,6 +7,7 @@
 - Removed `config.active_record.legacy_connection_handling` which was dropped in Rails 7.2 and caused `db:migrate` to fail
 - Updated `sqlite3` constraint from `< 2.0.0` to `>= 2.1` required by Rails 8.1
 - Fixed `enum` syntax in `Answer` model to use Rails 7.1+ positional argument style
+- Updated `validates_uniqueness_of` to modern `validates` syntax in `Label` model
 
 ## 0.29.4
 ### Improvements

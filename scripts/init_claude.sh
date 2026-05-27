@@ -57,6 +57,7 @@ init_claude_config() {
   local config_file="$HOME/.claude/settings.json"
 
   mkdir -p "$HOME/.claude"
+  [ -n "$CLAUDE_CODE_TMPDIR" ] && mkdir -p "$CLAUDE_CODE_TMPDIR"
 
   # Replace placeholders with environment variables
   if [ -f "$template_file" ]; then

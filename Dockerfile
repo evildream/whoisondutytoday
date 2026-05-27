@@ -23,7 +23,7 @@ RUN head -n -6 /usr/local/bundle/gems/slack-ruby-client-2.5.0/lib/slack/real_tim
     && mv temp_file /usr/local/bundle/gems/slack-ruby-client-2.5.0/lib/slack/real_time/concurrency/async.rb
 
 # Install Claude CLI and MCPs
-RUN /myapp/scripts/prepare_claude.sh && mkdir -p /myapp/claude-tmp
+RUN /myapp/scripts/prepare_claude.sh
 
 EXPOSE 3000
 

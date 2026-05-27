@@ -20,8 +20,8 @@ RUN bundle install
 COPY . /myapp
 RUN bundle exec whenever --update-crontab
 
-RUN head -n -6 /usr/local/bundle/gems/slack-ruby-client-2.4.0/lib/slack/real_time/concurrency/async.rb > temp_file  \
-    && mv temp_file /usr/local/bundle/gems/slack-ruby-client-2.4.0/lib/slack/real_time/concurrency/async.rb
+RUN head -n -6 /usr/local/bundle/gems/slack-ruby-client-2.5.0/lib/slack/real_time/concurrency/async.rb > temp_file  \
+    && mv temp_file /usr/local/bundle/gems/slack-ruby-client-2.5.0/lib/slack/real_time/concurrency/async.rb
 
 # Install Claude CLI and MCPs
 RUN chmod +x /myapp/scripts/prepare_claude.sh && /myapp/scripts/prepare_claude.sh

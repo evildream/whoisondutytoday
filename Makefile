@@ -11,7 +11,7 @@ else
 	DOCKER_IMAGE_TAG = $(VERSION)-${BRANCH}-$(COMMIT_SHA)
 endif
 
-DOCKER_REGISTRY_URL = docker.io/mrexz
+DOCKER_REGISTRY_URL = docker.io/evildream
 
 build: ## Build docker image with bot inside.
 	docker build --build-arg DOCKER_IMAGE_TAG=${DOCKER_IMAGE_TAG} -t ${DOCKER_REGISTRY_URL}/${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG} .

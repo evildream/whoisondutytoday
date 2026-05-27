@@ -10,7 +10,7 @@
 - Updated `validates_uniqueness_of` to modern `validates` syntax in `Label` model
 - Fixed Bootstrap 5 badge classes in Channels view (`badge-success`/`badge-secondary` → `badge bg-success`/`badge bg-secondary`)
 - Fixed Bootstrap 5 table header classes (`thead-dark` → `table-dark`) across all views
-- Fixed Claude CLI silently failing due to `/tmp/claude-0` being owned by another user — set `CLAUDE_CODE_TMPDIR` in settings template
+- Fixed Claude CLI silently failing due to tmpdir being owned by another user — set `CLAUDE_CODE_TMPDIR` to `/myapp/claude-tmp` in settings template and created the directory in Dockerfile
 
 ## 0.29.4
 ### Improvements

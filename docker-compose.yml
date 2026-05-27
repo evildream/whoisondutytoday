@@ -1,7 +1,7 @@
 version: '3'
 services:
   whoisondutytoday:
-    image: mrexz/whoisondutytoday:latest
+    image: evildream/whoisondutytoday:latest
     restart: always
     container_name: whoisondutytoday
     volumes:

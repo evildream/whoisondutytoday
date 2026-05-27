@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.29.5
+## 0.30.0
 ### Security
 - Disable slash commands, so no user would be able to run them
 ### Bugfixes

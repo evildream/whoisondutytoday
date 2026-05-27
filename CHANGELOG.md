@@ -5,6 +5,8 @@
 - Disable slash commands, so no user would be able to run them
 ### Bugfixes
 - Removed `config.active_record.legacy_connection_handling` which was dropped in Rails 7.2 and caused `db:migrate` to fail
+- Updated `sqlite3` constraint from `< 2.0.0` to `>= 2.1` required by Rails 8.1
+- Fixed `enum` syntax in `Answer` model to use Rails 7.1+ positional argument style
 
 ## 0.29.4
 ### Improvements

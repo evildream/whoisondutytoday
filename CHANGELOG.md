@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.29.5
+### Security
+- Disable slash commands, so no user would be able to run them
+
 ## 0.29.4
 ### Improvements
 - Updated `web-console` >= 4.2.1 to >= 4.3.0

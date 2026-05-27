@@ -3,6 +3,8 @@
 ## 0.29.5
 ### Security
 - Disable slash commands, so no user would be able to run them
+### Bugfixes
+- Removed `config.active_record.legacy_connection_handling` which was dropped in Rails 7.2 and caused `db:migrate` to fail
 
 ## 0.29.4
 ### Improvements

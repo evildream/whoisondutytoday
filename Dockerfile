@@ -8,7 +8,6 @@ RUN echo "deb http://deb.debian.org/debian/ stable main contrib" > /etc/apt/sour
 RUN apt-get update -qq && apt-get install -y nodejs npm cron ubuntu-dev-tools \
     && apt-get clean autoclean \
     && apt-get autoremove -y \
-    && mkdir /myapp \
     && crontab -l | { cat; echo ""; } | crontab -
 
 WORKDIR /myapp
@@ -24,7 +23,7 @@ RUN head -n -6 /usr/local/bundle/gems/slack-ruby-client-2.5.0/lib/slack/real_tim
     && mv temp_file /usr/local/bundle/gems/slack-ruby-client-2.5.0/lib/slack/real_time/concurrency/async.rb
 
 # Install Claude CLI and MCPs
-RUN chmod +x /myapp/scripts/prepare_claude.sh && /myapp/scripts/prepare_claude.sh && mkdir -p /myapp/claude-tmp
+RUN /myapp/scripts/prepare_claude.sh && mkdir -p /myapp/claude-tmp
 
 EXPOSE 3000
 
